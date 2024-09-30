@@ -1,0 +1,336 @@
+
+:root {
+	--primary-color: #ffffff;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial' , sans-serif;
+	--webkit-font-smoothing: antialiased;
+    background: rgb(249, 202, 202);
+    background-image: url(image/sakura-leaves.gif);
+    background-size: 100vh;
+	color: #999;
+	
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+h1{
+	font-size: 4rem;
+}
+
+h1, h2, h3, h4 {
+	color: #fff;
+}
+
+a{
+	color: rgb(249, 185, 185);
+	text-decoration: none;
+}
+
+p {
+	margin: 0.5rem 0;
+}
+
+img {
+	width: 100%;
+}
+
+.showcase {
+	width: 100%;
+	height: 93vh;
+	position: right;
+	background: url('https://img.techpowerup.org/200613/netflix-backgroung-image.jpg') no-repeat center center/cover;
+	text-indent: 5px;
+}
+.showcase h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: rgb(249, 139, 139);   
+}
+.showcase h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	size: 5px;
+	color: rgb(249, 139, 139);   
+}
+.showcase img{
+	height: fit-content;
+	margin-top: -20px;
+	z-index: -1;
+}
+
+.showcase-top {
+	position: absolute;
+	height: 90px;
+	padding-left: 0px;
+}
+
+.showcase-top img {
+	width: 350px;
+    align-items: left;
+}
+
+nav {
+	float: right;
+	padding-top: 30px;
+	padding-right: 50px;
+}
+
+
+
+/* Button */
+.btn {
+	display: inline-block;
+	background: var(--primary-color);
+	text-align: center;
+	border : none;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	outline: none;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+	border-radius: 5px;
+	transition: background-color .4s;
+	padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+	opacity: 0.7;
+}
+
+.btn-rounded {
+	border-radius: 5px;
+}
+
+.btn-x1 {
+	font-size: 1rem;
+	padding: 0.8rem 1.3rem;
+	text-transform: uppercase; 
+}
+
+.search-box {
+	position: center;
+	transform: translate(-50,-50);
+	height: 60px;
+}
+
+input {
+	height: 49px;
+	width: 550px;
+	border-radius: 5px;
+	padding: 0px 10px;
+}
+
+.enjoy-tv {
+	font-size: 30px;
+	text-align: left;
+	position: relative;
+	padding: 150px 10%;
+	
+	margin-bottom: 0;
+	background: 0 0;
+	color: #fff;
+	display: block;
+	
+}
+
+.enjoy-tv img {
+	width: 450px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(+20%, -50%);
+	display: block;
+}
+
+.Watch-offline {
+	font-size: 30px;
+	text-align: justify;
+	position: relative;
+	padding: 150px 10%;
+	margin-bottom: 0;
+	background: 0 0;
+	color: #fff;
+	display: block;
+	}
+
+.card-list {
+    display: flex;
+    padding: 4rem;
+    overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.card-list::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0, 0, 0, 0);
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+
+.card {
+    height: 460px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;    
+    background: rgb(244, 229, 233);
+    box-shadow: -1rem 0 3rem rgba(247, 246, 246, 0.526);
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+}
+
+.card:focus-within~.card, .card:hover~.card {
+    transform: translateX(130px);
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+
+.watch-everywhere {
+	font-size: 30px;
+	text-align: left;
+	position: relative;
+	padding: 150px 10%;
+	color: #fff;
+	display: block;
+}
+/* card list 1 */
+.card-list1 {
+    display: flex;
+    padding: 4rem;
+    overflow-y: scroll;
+}
+
+.card-list1::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.card-list1::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0, 0, 0, 0);
+}
+
+.card-list1::-webkit-scrollbar-track {
+    background: linear-gradient(180deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+
+.card1 {
+    height: 300px;
+    width: 600px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;    
+    background: rgb(244, 229, 233);
+    box-shadow: -1rem 0 3rem rgba(247, 246, 246, 0.526);
+    display: flex;
+    flex-direction:column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: end;
+    clear: both;
+    position: relative;
+}
+
+.card1:focus-within~.card1, .card1:hover~.card1 {
+    transform: translateX(130px);
+}
+
+.card1:hover {
+    transform: translateX(-1rem);
+}
+
+.card1:not(:first-child) {
+    margin-left: -120px;
+}
+
+.ask-question {
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.ask-question h1 {
+	font-size: 50px;
+	padding-bottom: 50px;
+}
+
+.page-down {
+	border-top: 8px solid #222;
+	background-color: transparent;
+	font-size: 0.8rem;
+	margin-bottom: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 0.5rem;
+}
+
+
+
+
+
+/* Default styles */
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+	.enjoy-tv img
+	{
+		max-width: 320px;
+		margin-left: -150px;
+	}
+	.watch-everywhere .card-list1
+	{
+		margin-left: -100px;
+	}
+	.card-list .card
+	{
+		margin-left: -50px;
+	}
+	.search-txt
+	{
+		margin-top: -230px;
+		margin: 20px;
+	}
+	.btn-x1
+	{
+		margin-top: 30px;
+	}
+  }
+  
+  /* Styles for screens between 768px and 991px */
+  @media (min-width: 768px) and (max-width: 991px) {
+	/* CSS code for medium-sized screens */
+  }
+  
+  /* Styles for screens larger than 992px */
+  @media (min-width: 992px) {
+	/* CSS code for larger screens */
+  }
+  
